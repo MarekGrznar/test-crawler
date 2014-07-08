@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails dslsk-crawler: development" uuid="81ce6034-c21b-4664-808f-4e466bb6f769">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails dslsk-crawler: test" uuid="764a1091-9b6d-49d9-aa20-0ce1824c1ea1">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails dslsk-crawler: production" uuid="99cddb12-4a3a-4cda-8dbd-2c91f3f636e3">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

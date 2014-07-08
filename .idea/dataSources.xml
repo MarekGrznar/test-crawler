@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3305240608">
+    <data-source source="LOCAL" name="Rails dslsk-crawler: development" uuid="81ce6034-c21b-4664-808f-4e466bb6f769">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/dslsk-crawler_development</jdbc-url>
+      <user-name>dslsk-crawler</user-name>
+      <user-password>dfcedfd9dfc6dfd9dfc1df87dfc9dfd8dfcbdfdddfc6dfcfdfd8</user-password>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-9.2-1002.jdbc4.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails dslsk-crawler: test" uuid="764a1091-9b6d-49d9-aa20-0ce1824c1ea1">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/dslsk-crawler_test</jdbc-url>
+      <user-name>dslsk-crawler</user-name>
+      <user-password>dfcedfd9dfc6dfd9dfc1df87dfc9dfd8dfcbdfdddfc6dfcfdfd8</user-password>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-9.2-1002.jdbc4.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails dslsk-crawler: production" uuid="99cddb12-4a3a-4cda-8dbd-2c91f3f636e3">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/dslsk-crawler_production</jdbc-url>
+      <user-name>dslsk-crawler</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfeedff9dfe6dff9dfe1df87dfe9dff8dfebdffddfe6dfefdff8dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-9.2-1002.jdbc4.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+
