@@ -6,7 +6,7 @@ class Articles < ActiveRecord::Base
     doc.search('.clanek_uvodka_new').map do |div|
       anchor = div.search('a.nadpis_clanku2').first
 
-      Articles.create!(
+      Articles.find_or_create_by!(
           article_id: anchor[:href][/clanek=(\d+)/, 1].to_i,
           title: anchor.text,
           perex: div.search('.popisek').text,
@@ -19,7 +19,7 @@ class Articles < ActiveRecord::Base
     doc = Nokogiri::HTML.parse(html)
     first_link = doc.search('a.title_day').first
 
-    Articles.create!(
+    Articles.find_or_create_by!(
       article_id: first_link[:href][/article=(\d+)/, 1].to_i,
       title: first_link.text,
       perex: doc.search('.article_perex').first.text,
@@ -30,7 +30,7 @@ class Articles < ActiveRecord::Base
       anchor = div.search('> a.title').first
       perex = div.search('> .article_perex').first
 
-      Articles.create!(
+      Articles.find_or_create_by!(
         article_id: anchor[:href][/article=(\d+)/, 1].to_i,
         title: anchor.text,
         perex: perex.text,
