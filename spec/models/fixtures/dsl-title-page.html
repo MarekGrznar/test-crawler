@@ -1,765 +1,951 @@
-   
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
-  	<meta http-equiv="content-type" content="text/html; charset=windows-1250">
-  	<meta http-equiv="cache-control" content="no-cache">
-  	<meta name="description" content="" />
-  	<title>DSL.sk</title>    
-    
-    <meta property="og:title" content="DSL.sk"/>
-    <meta property="og:description" content=""/>
-    
-    <meta property="og:site_name" content="DSL.sk"/>
-    <meta property="og:type" content="article"/>
-    
-    
-    <meta property="fb:app_id" content="117577148280650"/>
-    <meta property="fb:admins" content="815543179"/>
-    
-    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.dsl.sk/export/rss_articles.php" />    
-    <link rel="stylesheet" type="text/css" href="/css/default_26.css">
-    
-    <style>
-			div#map a.age0			{
-				background-color: rgb(232,232,255);
-			}
-			
-			div#map a.age0:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age1			{
-				background-color: rgb(228,228,255);
-			}
-			
-			div#map a.age1:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age2			{
-				background-color: rgb(224,224,255);
-			}
-			
-			div#map a.age2:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age3			{
-				background-color: rgb(220,220,255);
-			}
-			
-			div#map a.age3:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age4			{
-				background-color: rgb(216,216,255);
-			}
-			
-			div#map a.age4:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age5			{
-				background-color: rgb(212,212,255);
-			}
-			
-			div#map a.age5:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age6			{
-				background-color: rgb(208,208,255);
-			}
-			
-			div#map a.age6:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age7			{
-				background-color: rgb(204,204,255);
-			}
-			
-			div#map a.age7:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age8			{
-				background-color: rgb(200,200,255);
-			}
-			
-			div#map a.age8:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age9			{
-				background-color: rgb(196,196,255);
-			}
-			
-			div#map a.age9:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age10			{
-				background-color: rgb(192,192,255);
-			}
-			
-			div#map a.age10:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age11			{
-				background-color: rgb(188,188,255);
-			}
-			
-			div#map a.age11:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age12			{
-				background-color: rgb(184,184,255);
-			}
-			
-			div#map a.age12:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age13			{
-				background-color: rgb(180,180,255);
-			}
-			
-			div#map a.age13:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age14			{
-				background-color: rgb(176,176,255);
-			}
-			
-			div#map a.age14:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age15			{
-				background-color: rgb(172,172,255);
-			}
-			
-			div#map a.age15:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age16			{
-				background-color: rgb(168,168,255);
-			}
-			
-			div#map a.age16:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age17			{
-				background-color: rgb(164,164,255);
-			}
-			
-			div#map a.age17:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age18			{
-				background-color: rgb(160,160,255);
-			}
-			
-			div#map a.age18:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age19			{
-				background-color: rgb(156,156,255);
-			}
-			
-			div#map a.age19:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age20			{
-				background-color: rgb(152,152,255);
-			}
-			
-			div#map a.age20:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age21			{
-				background-color: rgb(148,148,255);
-			}
-			
-			div#map a.age21:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age22			{
-				background-color: rgb(144,144,255);
-			}
-			
-			div#map a.age22:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age23			{
-				background-color: rgb(140,140,255);
-			}
-			
-			div#map a.age23:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age24			{
-				background-color: rgb(136,136,255);
-			}
-			
-			div#map a.age24:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age25			{
-				background-color: rgb(132,132,255);
-			}
-			
-			div#map a.age25:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age26			{
-				background-color: rgb(128,128,255);
-			}
-			
-			div#map a.age26:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age27			{
-				background-color: rgb(124,124,255);
-			}
-			
-			div#map a.age27:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age28			{
-				background-color: rgb(120,120,255);
-			}
-			
-			div#map a.age28:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age29			{
-				background-color: rgb(116,116,255);
-			}
-			
-			div#map a.age29:hover
-			{
-				background-color: #FFEBCD;
-			}
-			div#map a.age30			{
-				background-color: rgb(112,112,255);
-			}
-			
-			div#map a.age30:hover
-			{
-				background-color: #FFEBCD;
-			}
-			
-				
-    </style>
-    
-    
-  </head>
-  <body bgcolor="#ffffff"> 	
-  
-    <script type="text/javascript" src="/js/detect_flashblock.php"></script>    
-    <script type="text/javascript" src="/js/detect_flash.js"></script>
-    <script type="text/javascript" src="/js/detect_tech.js"></script>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta http-equiv="content-type" content="text/html; charset=windows-1250">
+<meta http-equiv="cache-control" content="no-cache">
+<meta name="description" content=""/>
+<title>DSL.sk</title>
 
-    <script type="text/javascript">
-      test_flash('.dsl.sk');
-    </script>
-  	
-    <table cellpadding="0" cellspacing="0" border="0"><tr><td valign="top">
-    
-    <div id="bg">
-      <div id="header">
-      
-      <table border="0" cellpadding="0" cellspacing="0"><tr>
-          <td align="right" rowspan="2"><a href="http://www.dsl.sk/index.php"><img border="0" src="/images/design/DSL_9.png" width="310" height="81"></a><br/><img width="280" border="0" height="24" src="/images/small_logo.gif"/></td>
-          <td valign="middle" colspan="4" class="top_link" align="left" width="200">
-						  <!-- <img src="http://dot.idot.cz/?i=900201&amp;s=0&amp;c=0" width="1" height="1" alt="" style="border:0px;"> -->
-  
-               
-  							
-						  
-              <script type="text/javascript">
+<meta property="og:title" content="DSL.sk"/>
+<meta property="og:description" content=""/>
 
-                var _gaq = _gaq || [];
-                _gaq.push(['_setAccount', 'UA-454462-1']);
-                _gaq.push(['_setDomainName', 'dsl.sk']);
-                _gaq.push(['_trackPageview']);
-              
-                (function() {
-                  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                })();
-              
-              </script>
-              					           
-            
-          </td>
-          <td class="header_info_text" valign="top" align="right" width="270">
-            Za poslednú hodinu: 511 meraní
-            &nbsp;
-          </td></tr><tr>   
-          <td colspan="5" valign="bottom" align="right" width="474">
-            <!--<img width="60" height="12" src="images/design/reklama_2.gif"/>-->
-                        <font class="header_info_text">inzercia</font><br/><table 
-            border="0" cellpadding="2" cellspacing="1" bgcolor="#000000" width="474" height="66"><tr><td  bgcolor="#ffffff">
-	 
-  <iframe width="468" height="60" marginwidth="0" marginheight="0" frameborder="0" hspace="0" vspace="0" scrolling="no" bordercolor="#000000" src="http://dot.boss.sk/o/bf.php?sid=1&zid=1&r=1404891589&force_banner=">
-  </iframe>
-            </td></tr></table>
-                      </td>
-      </tr></table>
-      
-      </div>
-        
-      <div id="title_bar" >
-        <table border="0" cellpadding="0" cellspacing="2" width="100%" style="background-color: #ff;">
-        <tr><td style="background-color: transparent;"><a href="http://www.dsl.sk/export/rss_articles.php"><img border="0" src="/images/design/rss.gif" width="37" height="14" /></a><img src="/images/design/x.gif" border="0" width="15" height=3" /> &nbsp;
-    neprihlásený <a href="/user.php?action=login"><img src="/images/design/log_in.png" width="12" height="12" border="0"/></a>
-</td><td style="background-color: transparent;" align="right">                  
-            Streda, 9. júla 2014, dnes má meniny <b>Lujza</b> &nbsp; <a style="font-size: 7pt; text-decoration: none; color: #000000" href="http://dot.boss.sk/o/rs.php?ssid=1&szid=1&dsid=12&dzid=32&url=http%3A%2F%2Fwww.donaskakvetov.sk%2F%3Fpartner%3D33333"><img border="0" alt="DonaskaKvetov.sk - donáška kvetov v SR a zahraničí" width="14" height="10" src="/images/ads/ad_kvety.gif" /> Pošli kvety</a>            
-          </td></tr>
-        </table>
-      </div>              
+<meta property="og:site_name" content="DSL.sk"/>
+<meta property="og:type" content="article"/>
 
 
-      <table  border="0" cellpadding="0" cellspacing="0" width="100%">
-        <tr>        
-          <td rowspan="2" valign="top" width="165" bgcolor="#ffffff" align="left" style="background: url(/images/design/menu_bg.gif) repeat right;">
-          <div id="menu">
-            <div style="position: relative; color: #000000; font-weight: bold; font-family: Verdana; padding-top: 2px; padding-bottom: 2px; padding-left: 6px; font-size: 10pt; background: url(/images/design/menu_section_1.gif) no-repeat;">
-              DSL pripojenie
-            </div>
-            
-            <div style="margin-top: -1px;">
-              <div style="border: 1px solid #0060D0; background: #C0D0FF; padding-bottom: 6px;">
-              
-            <table border="0" width="160">
-              <tr><td colspan="2" valign="top" class="menu_line">
-                <a href="http://www.dsl.sk/prices.php" class="menu_line">Ceny DSL</a>          
-              </td></tr>
-              <tr><td colspan="2" class="menu_line">
-                <a href="http://www.dsl.sk/availability.php" class="menu_line">Dostupnosť DSL</a>
-              </td></tr>
-              <tr><td colspan="2" class="menu_line">
-                <a href="http://www.dsl.sk/forum.php" class="menu_line">Fórum o DSL</a>
-              </td></tr>              
-              <tr><td colspan="2" class="menu_line">
-                <a href="http://www.dsl.sk/stats.php" class="menu_line">Výsledky meraní</a>                  
-              </td></tr>
-            </table>
-              
-              </div>
-            </div>
+<meta property="fb:app_id" content="117577148280650"/>
+<meta property="fb:admins" content="815543179"/>
 
-    
-            <div style="margin-top: 8px;">
-              <div style="border: 1px solid #303030; background: #C0D0FF; padding-bottom: 4px;">
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.dsl.sk/export/rss_articles.php"/>
+<link rel="stylesheet" type="text/css" href="/css/default_26.css">
 
-            <table border="0" width="160">
-              <tr><td colspan="2" class="menu_line">
-                <a href="http://www.dsl.sk/map/index.php" class="menu_line">Satelitná mapa SR</a>               
-              </td></tr>
-            </table>
-            
-              </div>
-            </div>            
-            
-            
-            <div style="margin-top: 12px; position: relative; color: #000000; font-weight: bold; font-family: Verdana; padding-top: 2px; padding-bottom: 2px; padding-left: 6px; font-size: 7pt; background: url(/images/design/menu_section_5.gif) no-repeat;">
-              <a href="http://update.dsl.sk/update/index.php" class="menu_line" style="font-weight: bold;">update.dsl.sk</a> &nbsp; v0.92
-            </div>            
-            
-            <div style="margin-top: -1px;">
-              <div style="border: 1px solid #303030; background: #FFFF40; padding-bottom: 4px;">
+<style>
+div#map a.age0 {
+  background-color: rgb(232, 232, 255);
+}
 
-            <table border="0" width="160">
-    
-              <tr>
-                <td style="font-size: 7pt; padding: 0px; padding-left: 6px;"><a href="http://update.dsl.sk/update/software.php?id=6">Skype 3.0.0.198</a></td>
-              </tr>
-    
-              <tr>
-                <td style="font-size: 7pt; padding: 0px; padding-left: 6px;"><a href="http://update.dsl.sk/update/software.php?id=13">Opera 9.10</a></td>
-              </tr>
-    
-              <tr>
-                <td style="font-size: 7pt; padding: 0px; padding-left: 6px;"><a href="http://update.dsl.sk/update/software.php?id=40">Mozilla Thunderbird 1.5.0.9</a></td>
-              </tr>
-            </table>                         
+div#map a.age0:hover {
+  background-color: #FFEBCD;
+}
 
-              </div>
-            </div>  
-            
-                      
+div#map a.age1 {
+  background-color: rgb(228, 228, 255);
+}
 
-            <div style="margin-top: 12px; position: relative; color: #000000; font-weight: bold; font-family: Verdana; padding-top: 2px; padding-bottom: 2px; padding-left: 6px; font-size: 10pt; background: url(/images/design/menu_section_2.gif) no-repeat;">
-              Merače
-            </div>
-            
-            <div style="margin-top: -1px;">
-              <div style="border: 1px solid #303030; background: #D0D0D0; padding-bottom: 6px;">
+div#map a.age1:hover {
+  background-color: #FFEBCD;
+}
 
-            <table border="0" width="160">
-              <tr><td colspan="2" class="menu_line">
-                <a href="http://www.dsl.sk/speedmeter.php" class="menu_line">Speedmeter</a> <a class="menu_line" style="font-size: 7pt;" href="http://www.dsl.sk/speedmeter_history.php">Merania</a>              
-              </td></tr>
-              <tr><td colspan="2" class="menu_line">
-                <a href="http://www.dsl.sk/pingmeter.php" class="menu_line">Pingmeter</a> 
-              </td></tr> 
-                            
-              <tr><td colspan="2" valign="top" class="menu_line">
-                <a href="http://www.dsl.sk/googlemeter.php" class="menu_line">Googlemeter</a>          
-              </td></tr>
-            </table>                         
+div#map a.age2 {
+  background-color: rgb(224, 224, 255);
+}
 
-              </div>
-            </div>
-            
-            <div style="margin-top: 12px; position: relative; color: #000000; font-weight: bold; font-family: Verdana; padding-top: 2px; padding-bottom: 2px; padding-left: 6px; font-size: 10pt; background: url(/images/design/menu_section_4.gif) no-repeat;">
-              Hľadanie
-            </div>
-            
-            <div style="margin-top: -1px;">
-              <div style="border: 1px solid #10d010; background: #D0FFB0; padding-top: 10px; padding-left: 6px; padding-right: 6px; padding-bottom: 8px; width: 160px; margin-bottom: 0px;">
-                <form action="http://www.dsl.sk/search.php" method="post" style="display: inline;">
-                  <input type="hidden" name="action" value="search"/>
-                  <input type="text" name="keyword" value="" style="width: 130px; font-size: 8pt;"/>
-                  <input type="submit" name="submit" value="OK" style="width: 24px; font-size: 8pt;"/>
-                </form> 
-              </div>
-            </div>
-                  
-                                    
-            <div style="margin-top: 12px; position: relative; color: #000000; font-weight: bold; font-family: Verdana; padding-top: 2px; padding-bottom: 2px; padding-left: 6px; font-size: 10pt; background: url(/images/design/menu_section_3.gif) no-repeat;">
-              Top články
-            </div>
-            
-            <div style="margin-top: -1px;">
-              <div style="border: 1px solid #d01010; background: #FFD0B0; padding-bottom: 6px;">
+div#map a.age2:hover {
+  background-color: #FFEBCD;
+}
 
-            
-            <table border="0" width="160">
-                   
-              <tr><td colspan="2" valign="top" class="article_menu_line">           
-                <a href="http://www.dsl.sk/article.php?article=15634&title=" class="article_menu_line">Google potvrdil fotenie Slovenska, aktualizuje desiatky miest</a>          
-              </td></tr>                
-                   
-              <tr><td colspan="2" valign="top" class="article_menu_line">           
-                <a href="http://www.dsl.sk/article.php?article=15566&title=" class="article_menu_line">Antik spustí gigabitové pripojenie a 4K TV</a>          
-              </td></tr>                
-                   
-              <tr><td colspan="2" valign="top" class="article_menu_line">           
-                <a href="http://www.dsl.sk/article.php?article=15760&title=" class="article_menu_line">Google ukázal nový Android L, je dvakrát výkonnejší, má dlhšiu výdrž a vyzerá inak</a>          
-              </td></tr>                
-                   
-              <tr><td colspan="2" valign="top" class="article_menu_line">           
-                <a href="http://www.dsl.sk/article.php?article=15698&title=" class="article_menu_line">FIFA pustila do futbalu technológiu, na MS o góloch rozhoduje 14 kamier s 500 fps</a>          
-              </td></tr>                
-              
-            </table>   
-            
-              </div>
-            </div>                                  
+div#map a.age3 {
+  background-color: rgb(220, 220, 255);
+}
+
+div#map a.age3:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age4 {
+  background-color: rgb(216, 216, 255);
+}
+
+div#map a.age4:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age5 {
+  background-color: rgb(212, 212, 255);
+}
+
+div#map a.age5:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age6 {
+  background-color: rgb(208, 208, 255);
+}
+
+div#map a.age6:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age7 {
+  background-color: rgb(204, 204, 255);
+}
+
+div#map a.age7:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age8 {
+  background-color: rgb(200, 200, 255);
+}
+
+div#map a.age8:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age9 {
+  background-color: rgb(196, 196, 255);
+}
+
+div#map a.age9:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age10 {
+  background-color: rgb(192, 192, 255);
+}
+
+div#map a.age10:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age11 {
+  background-color: rgb(188, 188, 255);
+}
+
+div#map a.age11:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age12 {
+  background-color: rgb(184, 184, 255);
+}
+
+div#map a.age12:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age13 {
+  background-color: rgb(180, 180, 255);
+}
+
+div#map a.age13:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age14 {
+  background-color: rgb(176, 176, 255);
+}
+
+div#map a.age14:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age15 {
+  background-color: rgb(172, 172, 255);
+}
+
+div#map a.age15:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age16 {
+  background-color: rgb(168, 168, 255);
+}
+
+div#map a.age16:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age17 {
+  background-color: rgb(164, 164, 255);
+}
+
+div#map a.age17:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age18 {
+  background-color: rgb(160, 160, 255);
+}
+
+div#map a.age18:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age19 {
+  background-color: rgb(156, 156, 255);
+}
+
+div#map a.age19:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age20 {
+  background-color: rgb(152, 152, 255);
+}
+
+div#map a.age20:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age21 {
+  background-color: rgb(148, 148, 255);
+}
+
+div#map a.age21:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age22 {
+  background-color: rgb(144, 144, 255);
+}
+
+div#map a.age22:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age23 {
+  background-color: rgb(140, 140, 255);
+}
+
+div#map a.age23:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age24 {
+  background-color: rgb(136, 136, 255);
+}
+
+div#map a.age24:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age25 {
+  background-color: rgb(132, 132, 255);
+}
+
+div#map a.age25:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age26 {
+  background-color: rgb(128, 128, 255);
+}
+
+div#map a.age26:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age27 {
+  background-color: rgb(124, 124, 255);
+}
+
+div#map a.age27:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age28 {
+  background-color: rgb(120, 120, 255);
+}
+
+div#map a.age28:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age29 {
+  background-color: rgb(116, 116, 255);
+}
+
+div#map a.age29:hover {
+  background-color: #FFEBCD;
+}
+
+div#map a.age30 {
+  background-color: rgb(112, 112, 255);
+}
+
+div#map a.age30:hover {
+  background-color: #FFEBCD;
+}
 
 
+</style>
 
-            <div style="margin-top: 12px; position: relative; color: #000000; font-weight: bold; font-family: Verdana; padding-top: 2px; padding-bottom: 2px; padding-left: 6px; font-size: 10pt; background: url(/images/design/menu_section_4.gif) no-repeat;">
-              Top správy
-            </div>
-            
-            <div style="margin-top: -1px;">
-              <div style="border: 1px solid #10d010; background: #D0FFB0; padding-bottom: 6px;">
 
-            
-            <table border="0" width="160">
-                   
-              <tr><td colspan="2" valign="top" class="article_menu_line">           
-                <a href="http://www.dsl.sk/article.php?article=15802&title=" class="article_menu_line">Nadšenci zapli na 36-ročnej sonde NASA trysky</a>          
-              </td></tr>                
-                   
-              <tr><td colspan="2" valign="top" class="article_menu_line">           
-                <a href="http://www.dsl.sk/article.php?article=15801&title=" class="article_menu_line">Do USA Vás nepustia s vybitým mobilom</a>          
-              </td></tr>                
-                   
-              <tr><td colspan="2" valign="top" class="article_menu_line">           
-                <a href="http://www.dsl.sk/article.php?article=15797&title=" class="article_menu_line">robots.txt je tu už 20 rokov, Google vtipkuje o terminátoroch</a>          
-              </td></tr>                
-                   
-              <tr><td colspan="2" valign="top" class="article_menu_line">           
-                <a href="http://www.dsl.sk/article.php?article=15800&title=" class="article_menu_line">Záznam živého prenosu z predstavenia LTE ponuky Orange-u</a>          
-              </td></tr>                
-                   
-              <tr><td colspan="2" valign="top" class="article_menu_line">           
-                <a href="http://www.dsl.sk/article.php?article=15798&title=" class="article_menu_line">TeamViewer zmenil majiteľa, až za 1.1 miliardu</a>          
-              </td></tr>                
-                   
-              <tr><td colspan="2" valign="top" class="article_menu_line">           
-                <a href="http://www.dsl.sk/article.php?article=15796&title=" class="article_menu_line">LTE od Orange ide reálne do 65 Mbps, test</a>          
-              </td></tr>                
-                   
-              <tr><td colspan="2" valign="top" class="article_menu_line">           
-                <a href="http://www.dsl.sk/article.php?article=15803&title=" class="article_menu_line">Samsungu ukradli sedem kamiónov smartfónov, tabletov a notebookov</a>          
-              </td></tr>                
-                   
-              <tr><td colspan="2" valign="top" class="article_menu_line">           
-                <a href="http://www.dsl.sk/article.php?article=15808&title=" class="article_menu_line">Česi začali vysielať v DVB-T v novom H.265</a>          
-              </td></tr>                
-                   
-              <tr><td colspan="2" valign="top" class="article_menu_line">           
-                <a href="http://www.dsl.sk/article.php?article=15799&title=" class="article_menu_line">Microsoft má chystať prepúšťanie, údajne až do 10%</a>          
-              </td></tr>                
-                   
-              <tr><td colspan="2" valign="top" class="article_menu_line">           
-                <a href="http://www.dsl.sk/article.php?article=15807&title=" class="article_menu_line">Slováci využívajú Internet málo intenzívne</a>          
-              </td></tr>                
-              
-            </table>   
-            
-              </div>
-            </div> 
+</head>
+<body bgcolor="#ffffff">
 
-            
-             
-            
-            <br/>
-            
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-            
+<script type="text/javascript" src="/js/detect_flashblock.php"></script>
+<script type="text/javascript" src="/js/detect_flash.js"></script>
+<script type="text/javascript" src="/js/detect_tech.js"></script>
 
-          </div>
-          </td>
-          <!-- <td rowspan="2" width="2" bgcolor="#ffffff" valign="top"><img src="images/background_white.gif" width="2" height="16"/></td> -->
-          <td valign="top" bgcolor="#ffffff">      
-      
-      <div id="body">
-      
-                 
-  <table border="0" cellspacing="0" cellpadding="0">
+<script type="text/javascript">
+  test_flash('.dsl.sk');
+</script>
+
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td valign="top">
+
+<div id="bg">
+<div id="header">
+
+  <table border="0" cellpadding="0" cellspacing="0">
     <tr>
-      <td width="340" align="left" valign="top">
+      <td align="right" rowspan="2"><a href="http://www.dsl.sk/index.php"><img border="0" src="/images/design/DSL_9.png"
+                                                                               width="310" height="81"></a><br/><img
+        width="280" border="0" height="24" src="/images/small_logo.gif"/></td>
+      <td valign="middle" colspan="4" class="top_link" align="left" width="200">
+        <!-- <img src="http://dot.idot.cz/?i=900201&amp;s=0&amp;c=0" width="1" height="1" alt="" style="border:0px;"> -->
+
+
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-454462-1']);
+          _gaq.push(['_setDomainName', 'dsl.sk']);
+          _gaq.push(['_trackPageview']);
+
+          (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+
+
+      </td>
+      <td class="header_info_text" valign="top" align="right" width="270">
+        Za poslednú hodinu: 511 meraní
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="bottom" align="right" width="474">
+        <!--<img width="60" height="12" src="images/design/reklama_2.gif"/>-->
+        <font class="header_info_text">inzercia</font><br/>
+        <table
+          border="0" cellpadding="2" cellspacing="1" bgcolor="#000000" width="474" height="66">
+          <tr>
+            <td bgcolor="#ffffff">
+
+              <iframe width="468" height="60" marginwidth="0" marginheight="0" frameborder="0" hspace="0" vspace="0"
+                      scrolling="no" bordercolor="#000000"
+                      src="http://dot.boss.sk/o/bf.php?sid=1&zid=1&r=1404891589&force_banner=">
+              </iframe>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</div>
+
+<div id="title_bar">
+  <table border="0" cellpadding="0" cellspacing="2" width="100%" style="background-color: #ff;">
+    <tr>
+      <td style="background-color: transparent;"><a href="http://www.dsl.sk/export/rss_articles.php"><img border="0"
+                                                                                                          src="/images/design/rss.gif"
+                                                                                                          width="37"
+                                                                                                          height="14"/></a><img
+        src="/images/design/x.gif" border="0" width="15" height=3"/> &nbsp;
+        neprihlásený <a href="/user.php?action=login"><img src="/images/design/log_in.png" width="12" height="12"
+                                                           border="0"/></a>
+      </td>
+      <td style="background-color: transparent;" align="right">
+        Streda, 9. júla 2014, dnes má meniny <b>Lujza</b> &nbsp; <a
+        style="font-size: 7pt; text-decoration: none; color: #000000"
+        href="http://dot.boss.sk/o/rs.php?ssid=1&szid=1&dsid=12&dzid=32&url=http%3A%2F%2Fwww.donaskakvetov.sk%2F%3Fpartner%3D33333"><img
+        border="0" alt="DonaskaKvetov.sk - donáška kvetov v SR a zahraničí" width="14" height="10"
+        src="/images/ads/ad_kvety.gif"/> Pošli kvety</a>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td rowspan="2" valign="top" width="165" bgcolor="#ffffff" align="left"
+    style="background: url(/images/design/menu_bg.gif) repeat right;">
+<div id="menu">
+<div
+  style="position: relative; color: #000000; font-weight: bold; font-family: Verdana; padding-top: 2px; padding-bottom: 2px; padding-left: 6px; font-size: 10pt; background: url(/images/design/menu_section_1.gif) no-repeat;">
+  DSL pripojenie
+</div>
+
+<div style="margin-top: -1px;">
+  <div style="border: 1px solid #0060D0; background: #C0D0FF; padding-bottom: 6px;">
+
+    <table border="0" width="160">
+      <tr>
+        <td colspan="2" valign="top" class="menu_line">
+          <a href="http://www.dsl.sk/prices.php" class="menu_line">Ceny DSL</a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="menu_line">
+          <a href="http://www.dsl.sk/availability.php" class="menu_line">Dostupnosť DSL</a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="menu_line">
+          <a href="http://www.dsl.sk/forum.php" class="menu_line">Fórum o DSL</a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="menu_line">
+          <a href="http://www.dsl.sk/stats.php" class="menu_line">Výsledky meraní</a>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+</div>
+
+
+<div style="margin-top: 8px;">
+  <div style="border: 1px solid #303030; background: #C0D0FF; padding-bottom: 4px;">
+
+    <table border="0" width="160">
+      <tr>
+        <td colspan="2" class="menu_line">
+          <a href="http://www.dsl.sk/map/index.php" class="menu_line">Satelitná mapa SR</a>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+</div>
+
+
+<div
+  style="margin-top: 12px; position: relative; color: #000000; font-weight: bold; font-family: Verdana; padding-top: 2px; padding-bottom: 2px; padding-left: 6px; font-size: 7pt; background: url(/images/design/menu_section_5.gif) no-repeat;">
+  <a href="http://update.dsl.sk/update/index.php" class="menu_line" style="font-weight: bold;">update.dsl.sk</a> &nbsp;
+  v0.92
+</div>
+
+<div style="margin-top: -1px;">
+  <div style="border: 1px solid #303030; background: #FFFF40; padding-bottom: 4px;">
+
+    <table border="0" width="160">
+
+      <tr>
+        <td style="font-size: 7pt; padding: 0px; padding-left: 6px;"><a
+          href="http://update.dsl.sk/update/software.php?id=6">Skype 3.0.0.198</a></td>
+      </tr>
+
+      <tr>
+        <td style="font-size: 7pt; padding: 0px; padding-left: 6px;"><a
+          href="http://update.dsl.sk/update/software.php?id=13">Opera 9.10</a></td>
+      </tr>
+
+      <tr>
+        <td style="font-size: 7pt; padding: 0px; padding-left: 6px;"><a
+          href="http://update.dsl.sk/update/software.php?id=40">Mozilla Thunderbird 1.5.0.9</a></td>
+      </tr>
+    </table>
+
+  </div>
+</div>
+
+
+<div
+  style="margin-top: 12px; position: relative; color: #000000; font-weight: bold; font-family: Verdana; padding-top: 2px; padding-bottom: 2px; padding-left: 6px; font-size: 10pt; background: url(/images/design/menu_section_2.gif) no-repeat;">
+  Merače
+</div>
+
+<div style="margin-top: -1px;">
+  <div style="border: 1px solid #303030; background: #D0D0D0; padding-bottom: 6px;">
+
+    <table border="0" width="160">
+      <tr>
+        <td colspan="2" class="menu_line">
+          <a href="http://www.dsl.sk/speedmeter.php" class="menu_line">Speedmeter</a> <a class="menu_line"
+                                                                                         style="font-size: 7pt;"
+                                                                                         href="http://www.dsl.sk/speedmeter_history.php">Merania</a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="menu_line">
+          <a href="http://www.dsl.sk/pingmeter.php" class="menu_line">Pingmeter</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" valign="top" class="menu_line">
+          <a href="http://www.dsl.sk/googlemeter.php" class="menu_line">Googlemeter</a>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+</div>
+
+<div
+  style="margin-top: 12px; position: relative; color: #000000; font-weight: bold; font-family: Verdana; padding-top: 2px; padding-bottom: 2px; padding-left: 6px; font-size: 10pt; background: url(/images/design/menu_section_4.gif) no-repeat;">
+  Hľadanie
+</div>
+
+<div style="margin-top: -1px;">
+  <div
+    style="border: 1px solid #10d010; background: #D0FFB0; padding-top: 10px; padding-left: 6px; padding-right: 6px; padding-bottom: 8px; width: 160px; margin-bottom: 0px;">
+    <form action="http://www.dsl.sk/search.php" method="post" style="display: inline;">
+      <input type="hidden" name="action" value="search"/>
+      <input type="text" name="keyword" value="" style="width: 130px; font-size: 8pt;"/>
+      <input type="submit" name="submit" value="OK" style="width: 24px; font-size: 8pt;"/>
+    </form>
+  </div>
+</div>
+
+
+<div
+  style="margin-top: 12px; position: relative; color: #000000; font-weight: bold; font-family: Verdana; padding-top: 2px; padding-bottom: 2px; padding-left: 6px; font-size: 10pt; background: url(/images/design/menu_section_3.gif) no-repeat;">
+  Top články
+</div>
+
+<div style="margin-top: -1px;">
+  <div style="border: 1px solid #d01010; background: #FFD0B0; padding-bottom: 6px;">
+
+
+    <table border="0" width="160">
+
+      <tr>
+        <td colspan="2" valign="top" class="article_menu_line">
+          <a href="http://www.dsl.sk/article.php?article=15634&title=" class="article_menu_line">Google potvrdil fotenie
+            Slovenska, aktualizuje desiatky miest</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" valign="top" class="article_menu_line">
+          <a href="http://www.dsl.sk/article.php?article=15566&title=" class="article_menu_line">Antik spustí gigabitové
+            pripojenie a 4K TV</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" valign="top" class="article_menu_line">
+          <a href="http://www.dsl.sk/article.php?article=15760&title=" class="article_menu_line">Google ukázal nový
+            Android L, je dvakrát výkonnejší, má dlhšiu výdrž a vyzerá inak</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" valign="top" class="article_menu_line">
+          <a href="http://www.dsl.sk/article.php?article=15698&title=" class="article_menu_line">FIFA pustila do futbalu
+            technológiu, na MS o góloch rozhoduje 14 kamier s 500 fps</a>
+        </td>
+      </tr>
+
+    </table>
+
+  </div>
+</div>
+
+
+<div
+  style="margin-top: 12px; position: relative; color: #000000; font-weight: bold; font-family: Verdana; padding-top: 2px; padding-bottom: 2px; padding-left: 6px; font-size: 10pt; background: url(/images/design/menu_section_4.gif) no-repeat;">
+  Top správy
+</div>
+
+<div style="margin-top: -1px;">
+  <div style="border: 1px solid #10d010; background: #D0FFB0; padding-bottom: 6px;">
+
+
+    <table border="0" width="160">
+
+      <tr>
+        <td colspan="2" valign="top" class="article_menu_line">
+          <a href="http://www.dsl.sk/article.php?article=15802&title=" class="article_menu_line">Nadšenci zapli na
+            36-ročnej sonde NASA trysky</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" valign="top" class="article_menu_line">
+          <a href="http://www.dsl.sk/article.php?article=15801&title=" class="article_menu_line">Do USA Vás nepustia s
+            vybitým mobilom</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" valign="top" class="article_menu_line">
+          <a href="http://www.dsl.sk/article.php?article=15797&title=" class="article_menu_line">robots.txt je tu už 20
+            rokov, Google vtipkuje o terminátoroch</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" valign="top" class="article_menu_line">
+          <a href="http://www.dsl.sk/article.php?article=15800&title=" class="article_menu_line">Záznam živého prenosu z
+            predstavenia LTE ponuky Orange-u</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" valign="top" class="article_menu_line">
+          <a href="http://www.dsl.sk/article.php?article=15798&title=" class="article_menu_line">TeamViewer zmenil
+            majiteľa, až za 1.1 miliardu</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" valign="top" class="article_menu_line">
+          <a href="http://www.dsl.sk/article.php?article=15796&title=" class="article_menu_line">LTE od Orange ide
+            reálne do 65 Mbps, test</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" valign="top" class="article_menu_line">
+          <a href="http://www.dsl.sk/article.php?article=15803&title=" class="article_menu_line">Samsungu ukradli sedem
+            kamiónov smartfónov, tabletov a notebookov</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" valign="top" class="article_menu_line">
+          <a href="http://www.dsl.sk/article.php?article=15808&title=" class="article_menu_line">Česi začali vysielať v
+            DVB-T v novom H.265</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" valign="top" class="article_menu_line">
+          <a href="http://www.dsl.sk/article.php?article=15799&title=" class="article_menu_line">Microsoft má chystať
+            prepúšťanie, údajne až do 10%</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" valign="top" class="article_menu_line">
+          <a href="http://www.dsl.sk/article.php?article=15807&title=" class="article_menu_line">Slováci využívajú
+            Internet málo intenzívne</a>
+        </td>
+      </tr>
+
+    </table>
+
+  </div>
+</div>
+
+
+<br/>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+</div>
+</td>
+<!-- <td rowspan="2" width="2" bgcolor="#ffffff" valign="top"><img src="images/background_white.gif" width="2" height="16"/></td> -->
+<td valign="top" bgcolor="#ffffff">
+
+<div id="body">
+
+
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="340" align="left" valign="top">
       <font class="box_title">A K T U Á L N E&nbsp;&nbsp;&nbsp;I T&nbsp;&nbsp;&nbsp;S P R Á V Y</font><br/>
 
-        <div id="news_box" style="width: 320px;">
-         
-    
-    <a href="article.php?article=15810" >Softvér dokáže zistiť heslo písané na dotykovom zariadení z 3 metrov</a>, 9.7. 09:24, <a href="article.php?article=15810&count=2#discussion">(2)</a>
-    
-    <br/>
-    
-    <a href="article.php?article=15812" >Microsoft nepredĺži podporu Windows 7, štandardná skončí už v januári</a>, 9.7. 08:14, <a href="article.php?article=15812&count=16#discussion">(16)</a>
-    
-    <br/>
-    
-    <a href="article.php?article=15808" >Česi začali vysielať v DVB-T v novom H.265</a>, 8.7. 13:13, <a href="article.php?article=15808&count=33#discussion">(33)</a>
-    
-    <br/>
-    
-    <a href="article.php?article=15807" >Slováci využívajú Internet málo intenzívne</a>, 8.7. 11:35, <a href="article.php?article=15807&count=46#discussion">(46)</a>
-    
-    <br/>
-    
-    <a href="article.php?article=15805" >Briti počítajú do rebríčkov predajnosti aj streamovanú hudbu, s koeficientom</a>, 8.7. 10:32, <a href="article.php?article=15805&count=4#discussion">(4)</a>
-    
-    <br/>
-    
-    <a href="article.php?article=15804" >Slovanet mení majiteľa, HN spomínajú J&T</a>, 8.7. 09:38, <a href="article.php?article=15804&count=21#discussion">(21)</a>
-    
-    <br/>
-    
-    <a href="article.php?article=15803" >Samsungu ukradli sedem kamiónov smartfónov, tabletov a notebookov</a>, 8.7. 08:36, <a href="article.php?article=15803&count=33#discussion">(33)</a>
-    
-    <br/>
-    
-    <a href="article.php?article=15802" >Nadšenci zapli na 36-ročnej sonde NASA trysky</a>, 7.7. 13:54, <a href="article.php?article=15802&count=29#discussion">(29)</a>
-    
-    <br/>
-    
-    <a href="article.php?article=15798" >TeamViewer zmenil majiteľa, až za 1.1 miliardu</a>, 7.7. 10:45, <a href="article.php?article=15798&count=55#discussion">(55)</a>
-    
-    <br/>
-    
-    <a href="article.php?article=15800" >Záznam živého prenosu z predstavenia LTE ponuky Orange-u</a>, 7.7. 10:00, <a href="article.php?article=15800&count=70#discussion">(70)</a>
-    
-    <br/>
-  
-        </div>
-        <table align="right"><tr><td align="right">
-          <a href="index_news.php?page=15794" class="small_box_title">Staršie správy&nbsp;&nbsp;>>&nbsp;&nbsp;</a>
-        </td></tr></table>
-      </td>
-      <td rowspan="1" valign="top" align="right" width="250">      
+      <div id="news_box" style="width: 320px;">
+
+
+        <a href="article.php?article=15810">Softvér dokáže zistiť heslo písané na dotykovom zariadení z 3 metrov</a>,
+        9.7. 09:24, <a href="article.php?article=15810&count=2#discussion">(2)</a>
+
         <br/>
-        <div width="250" height="250" style="border: 1px solid #e0e0e0;">
-          <script type="text/javascript"><!--
-          google_ad_client = "ca-pub-8109890840368333";
-          /* HP display ad */
-          google_ad_slot = "9794474442";
-          google_ad_width = 250;
-          google_ad_height = 250;
-          //-->
-          </script>
-          <script type="text/javascript"
-          src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-          </script>       
-        </div>
-        <font class="ad_font">inzercia</font>
-        
-      </td>
-    </tr>
-  </table>
-  <table border="0" cellspacing="8" cellpadding="0">
-    <tr>
-      <td width="400" align="left" valign="top">
-          <a class="title_day" href="article.php?article=15760&title=">Google ukázal nový Android L, je dvakrát výkonnejší, má dlhšiu výdrž a vyzerá inak</a>
-    <br/><br/>
-      
-      <img style="margin-right: 8px; margin-bottom: 8px;" align="left" border="1" src="/images/articles/2014-06-26-android-l-2.jpg"/>
-    
-    <font class="article_perex">Spoločnosť Google v stredu na svojej konferencii pre vývojárov Google I/O predstavila viacero produktových noviniek vrátane novej verzie svojho operačného systému Android, označovaná spoločnosťou za najvýznamnejšiu novú verziu v celej histórii tohto OS. V novej verzii prišlo k výraznému prepracovaniu dizajnu a rapídne sa má vďaka novému runtimu zvýšiť aj výkon a odozva, lepšia má byť aj spotreba a výdrž.</font>
-    <br/><br/>
-    <font class="article_perex">26.6.2014, DSL.sk</font><br/><font class="small_notes"><a href="article.php?article=15760&title=#discussion">66 komentárov, 6.7. 0:39</a> &nbsp; | &nbsp; Hlasov v ankete: 439</font>
- 
-      </td>
-      <td align="right">
-	<font class="box_title">&nbsp;HOT STORY beta</font>
-<div id="map" style="width: 176px; height: 176px;">
-		<a href="/article.php?id=15812&hot=1" class="age0" style="border: 1px solid #666; left: 0px; top: 0px; width: 66px; height: 87px; font-size: 8pt;" >Microsoft nepredĺži podporu Windows 7, štandardná skončí už v januári</a>
-		<a href="/article.php?id=15810&hot=2" class="age0" style="border: 1px solid #666; left: 0px; top: 88px; width: 66px; height: 82px; font-size: 7pt;" >Softvér dokáže zistiť heslo písané na dotykovom zariadení z 3 metrov</a>
-		<a href="/article.php?id=15795&hot=3" class="age20" style="left: 67px; top: 0px; height: 79px; width: 57px;" >Nemecké médiá zažalovali tvorcu Adblocku Plus</a>
-		<a href="/article.php?id=15802&hot=4" class="age7" style="left: 125px; top: 0px; height: 79px; width: 45px;" >Nadšenci zapli na 36-ročnej sonde NASA trysky</a>
-		<a href="/article.php?id=15801&hot=5" class="age8" style="left: 67px; top: 80px; height: 63px; width: 53px; font-size: 7pt;">Do USA Vás nepustia s vybitým mobilom</a>
-		<a href="/article.php?id=15800&hot=6" class="age8" style="left: 121px; top: 80px; height: 63px; width: 49px; font-size: 7pt;">Záznam živého prenosu z predstavenia LTE ponuky Orange-u</a>
-		<a href="/article.php?id=15797&hot=7" class="age11" style="border: 1px solid #666; left: 67px; top: 144px; height: 26px; width: 103px; font-size: 7pt;">robots.txt je tu už 20 rokov, Google vtipkuje o terminátoroch</a>
-					
-		</div>	
-    
-  
-<!-- <font class="box_title">&nbsp;<a class="box_title" href="http://www.onlinegames.sk">O N L I N E G A M E S . S K</a></font> -->
-  <table cellspacing="2" cellpadding="1" bgcolor="#000000" border="0"><tr><td style="padding: 1px; margin: 0px;" bgcolor="#ffffff"><a style="font-decoration: none; border: 0px; padding: 0px; margin: 0px;" href="http://www.onlinegames.sk/game.php?game=1438"><img width="172" height="129" src="/images/onlinegames-thumbnails-172/1438.jpg" style="border: 1px solid #000000; padding: 0px; margin: 0px; font-decoration: none;"/></a></td></tr></table>      
-      
-  <br/>
 
-            
-         
-      </td>
-    </tr>
-   
-  </table>
+        <a href="article.php?article=15812">Microsoft nepredĺži podporu Windows 7, štandardná skončí už v januári</a>,
+        9.7. 08:14, <a href="article.php?article=15812&count=16#discussion">(16)</a>
 
-  <table width="98%" border="0" cellpadding="3">  
-    
-    <tr>
-      <td valign="top" width="50%">
-            <a class="title" href="article.php?article=15698&title=">FIFA pustila do futbalu technológiu, na MS o góloch rozhoduje 14 kamier s 500 fps</a>
-    <br/><br/>
-      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100" src="/images/articles/thumbnails/thumbnail-15698.jpg"/>
-    
-    <font class="article_perex">Na 20. majstrovstvách sveta vo futbale, ktoré štartujú úvodným zápasom vo štvrtok, bude prvýkrát v histórii asistovať pri rozhodovaní technológia. Po nesprávnych rozhodnutiach rozhodcov okrem iného na predchádzajúcich MS 2010 bude posudzovať padnutie gólu plne automaticky nemecká kamerová technológia GoalControl-4D, ktorá umožní rozhodcom správne rozhodnúť aj v komplikovaných situáciách. Technológia sa spolieha na celkom 14 vysokorýchlostných kamier na jednom štadióne.</font>
-    <br/><br/>
-    <font class="article_perex">11.6.2014, DSL.sk</font><br/><font class="small_notes"><a href="article.php?article=15698&title=#discussion">79 komentárov, 30.6. 13:57</a> &nbsp; | &nbsp; Hlasov v ankete: 330</font>
- 
-      </td>    
-      <td valign="top" width="50%">
-            <a class="title" href="article.php?article=15634&title=">Google potvrdil fotenie Slovenska, aktualizuje desiatky miest</a>
-    <br/><br/>
-      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100" src="/images/articles/thumbnails/thumbnail-15634.jpg"/>
-    
-    <font class="article_perex">Po tom, ako čitatelia DSL.sk najskôr vo štvrtok minulého týždňa a následne dnes zaregistrovali v Bratislave autá pre fotenie panoramatických snímok pre Google Street View, Google oficiálne potvrdil odštartovanie prefocovania Slovenska. Spoločnosť plánuje prefotiť desiatky miest a obcí a nafotiť niektoré nové významné lokality. Začne v najbližších dňoch.</font>
-    <br/><br/>
-    <font class="article_perex">27.5.2014, DSL.sk</font><br/><font class="small_notes"><a href="article.php?article=15634&title=#discussion">88 komentárov, 4.7. 20:42</a> &nbsp; | &nbsp; Hlasov v ankete: 687</font>
-  
-      </td> 
-    </tr>
-    <tr><td colspan="2">&nbsp;</td></tr>
-    
-    <tr>
-      <td valign="top" width="50%">
-            <a class="title" href="article.php?article=15566&title=">Antik spustí gigabitové pripojenie a 4K TV</a>
-    <br/><br/>
-      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100" src="/images/articles/thumbnails/thumbnail-15566.jpg"/>
-    
-    <font class="article_perex">Telekomunikačný operátor Antik Telecom plánuje v tomto roku spustiť na Slovensku pripojenie k Internetu s rýchlosťou 1000 Mbps, teda gigabit za sekundu, a to s významným pokrytím. Operátor tiež pripravuje televízne vysielanie s rozlíšením 4K, 3840 x 2160, v ktorom bude šíriť vlastný kanál s natívnym 4K obsahom. Bližšie informácie operátor zverejní v stredu.</font>
-    <br/><br/>
-    <font class="article_perex">12.5.2014, DSL.sk</font><br/><font class="small_notes"><a href="article.php?article=15566&title=#discussion">102 komentárov, 5.7. 10:49</a> &nbsp; | &nbsp; Hlasov v ankete: 582</font>
- 
-      </td>    
-      <td valign="top" width="50%">
-            <a class="title" href="article.php?article=15461&title=">NSA mala zneužívať OpenSSL roky, zmena hesla odporúčaná u 15 služieb</a>
-    <br/><br/>
-      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100" src="/images/articles/thumbnails/thumbnail-15461.jpg"/>
-    
-    <font class="article_perex">Americká tajná služba NSA mala podľa tvrdení agentúry Bloomberg poznať a zneužívať chybu Heartbleed v knižnici OpenSSL implementujúcej protokol SSL minimálne dva roky. Zároveň v piatok bolo prvýkrát úspešne demonštrované praktické získanie privátnych kľúčov k SSL certifikátu cez Heartbleed. Užívateľom je tak odporúčané v službách, ktoré používali zraniteľnú verziu, pristúpiť minimálne z preventívnych dôvodov k zmene hesla.
-</font>
-    <br/><br/>
-    <font class="article_perex">12.4.2014, DSL.sk</font><br/><font class="small_notes"><a href="article.php?article=15461&title=#discussion">76 komentárov, 6.5. 12:09</a> &nbsp; | &nbsp; Hlasov v ankete: 439</font>
-  
-      </td> 
-    </tr>
-    <tr><td colspan="2">&nbsp;</td></tr>
-    
-    <tr>
-      <td valign="top" width="50%">
-            <a class="title" href="article.php?article=15416&title=">Orange spustil pripojenie cez VDSL</a>
-    <br/><br/>
-      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100" src="/images/articles/thumbnails/thumbnail-15416.jpg"/>
-    
-    <font class="article_perex">Telekomunikačný operátor Orange dnes ako prvý z alternatívnych operátorov predstavil ponuku svojho pevného pripojenia do Internetu technológiou VDSL. Orange rýchlejšie pripojenie cez VDSL ponúka v podobe doplnkových balíčkov zvyšujúcich rýchlosť buď na 20 / 2 Mbps alebo 50 / 5 Mbps. U 20 Mbps balíčku si je možné zvýšiť upload na 5 Mbps, zároveň pri zrýchlení sťahovania na 10 Mbps je k dispozícii rýchlejší 1 Mbps upload.</font>
-    <br/><br/>
-    <font class="article_perex">2.4.2014, DSL.sk</font><br/><font class="small_notes"><a href="article.php?article=15416&title=#discussion">57 komentárov, 19.6. 16:58</a> &nbsp; | &nbsp; Hlasov v ankete: 390</font>
- 
-      </td>    
-      <td valign="top" width="50%">
-            <a class="title" href="article.php?article=15356&title=">Google predstavil Android pre hodinky, zatiaľ umožňuje len aplikačné notifikácie</a>
-    <br/><br/>
-      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100" src="/images/articles/thumbnails/thumbnail-15356.jpg"/>
-    
-    <font class="article_perex">Spoločnosť Google aktuálne predstavila očakávanú novú platformu Android Wear, určenú pre nositeľné zariadenia a zatiaľ najmä náramkové smart hodinky. Platforma je podľa predstavenej funkčnosti určená pre zariadenia, ktoré budú dopĺňať funkčnosť  plnohodnotných mobilných zariadení ako sú smartfóny. Prvými dvomi zariadeniami postavenými na platforme budú hodinky od LG a Motoroly.</font>
-    <br/><br/>
-    <font class="article_perex">19.3.2014, DSL.sk</font><br/><font class="small_notes"><a href="article.php?article=15356&title=#discussion">17 komentárov, 9.7. 1:27</a> &nbsp; | &nbsp; Hlasov v ankete: 191</font>
-  
-      </td> 
-    </tr>
-    <tr><td colspan="2">&nbsp;</td></tr>
-  
-  </table>
-  
-  <br/>
+        <br/>
+
+        <a href="article.php?article=15808">Česi začali vysielať v DVB-T v novom H.265</a>, 8.7. 13:13, <a
+        href="article.php?article=15808&count=33#discussion">(33)</a>
+
+        <br/>
+
+        <a href="article.php?article=15807">Slováci využívajú Internet málo intenzívne</a>, 8.7. 11:35, <a
+        href="article.php?article=15807&count=46#discussion">(46)</a>
+
+        <br/>
+
+        <a href="article.php?article=15805">Briti počítajú do rebríčkov predajnosti aj streamovanú hudbu, s
+          koeficientom</a>, 8.7. 10:32, <a href="article.php?article=15805&count=4#discussion">(4)</a>
+
+        <br/>
+
+        <a href="article.php?article=15804">Slovanet mení majiteľa, HN spomínajú J&T</a>, 8.7. 09:38, <a
+        href="article.php?article=15804&count=21#discussion">(21)</a>
+
+        <br/>
+
+        <a href="article.php?article=15803">Samsungu ukradli sedem kamiónov smartfónov, tabletov a notebookov</a>, 8.7.
+        08:36, <a href="article.php?article=15803&count=33#discussion">(33)</a>
+
+        <br/>
+
+        <a href="article.php?article=15802">Nadšenci zapli na 36-ročnej sonde NASA trysky</a>, 7.7. 13:54, <a
+        href="article.php?article=15802&count=29#discussion">(29)</a>
+
+        <br/>
+
+        <a href="article.php?article=15798">TeamViewer zmenil majiteľa, až za 1.1 miliardu</a>, 7.7. 10:45, <a
+        href="article.php?article=15798&count=55#discussion">(55)</a>
+
+        <br/>
+
+        <a href="article.php?article=15800">Záznam živého prenosu z predstavenia LTE ponuky Orange-u</a>, 7.7. 10:00, <a
+        href="article.php?article=15800&count=70#discussion">(70)</a>
+
+        <br/>
+
+      </div>
+      <table align="right">
+        <tr>
+          <td align="right">
+            <a href="index_news.php?page=15794" class="small_box_title">Staršie správy&nbsp;&nbsp;>>&nbsp;&nbsp;</a>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td rowspan="1" valign="top" align="right" width="250">
+      <br/>
+
+      <div width="250" height="250" style="border: 1px solid #e0e0e0;">
+        <script type="text/javascript"><!--
+        google_ad_client = "ca-pub-8109890840368333";
+        /* HP display ad */
+        google_ad_slot = "9794474442";
+        google_ad_width = 250;
+        google_ad_height = 250;
+        //-->
+        </script>
+        <script type="text/javascript"
+                src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script>
+      </div>
+      <font class="ad_font">inzercia</font>
+
+    </td>
+  </tr>
+</table>
+<table border="0" cellspacing="8" cellpadding="0">
+  <tr>
+    <td width="400" align="left" valign="top">
+      <a class="title_day" href="article.php?article=15760&title=">Google ukázal nový Android L, je dvakrát výkonnejší,
+        má dlhšiu výdrž a vyzerá inak</a>
+      <br/><br/>
+
+      <img style="margin-right: 8px; margin-bottom: 8px;" align="left" border="1"
+           src="/images/articles/2014-06-26-android-l-2.jpg"/>
+
+      <font class="article_perex">Spoločnosť Google v stredu na svojej konferencii pre vývojárov Google I/O predstavila
+        viacero produktových noviniek vrátane novej verzie svojho operačného systému Android, označovaná spoločnosťou za
+        najvýznamnejšiu novú verziu v celej histórii tohto OS. V novej verzii prišlo k výraznému prepracovaniu dizajnu a
+        rapídne sa má vďaka novému runtimu zvýšiť aj výkon a odozva, lepšia má byť aj spotreba a výdrž.</font>
+      <br/><br/>
+      <font class="article_perex">26.6.2014, DSL.sk</font><br/><font class="small_notes"><a
+      href="article.php?article=15760&title=#discussion">66 komentárov, 6.7. 0:39</a> &nbsp; | &nbsp; Hlasov v ankete:
+      439</font>
+
+    </td>
+    <td align="right">
+      <font class="box_title">&nbsp;HOT STORY beta</font>
+
+      <div id="map" style="width: 176px; height: 176px;">
+        <a href="/article.php?id=15812&hot=1" class="age0"
+           style="border: 1px solid #666; left: 0px; top: 0px; width: 66px; height: 87px; font-size: 8pt;">Microsoft
+          nepredĺži podporu Windows 7, štandardná skončí už v januári</a>
+        <a href="/article.php?id=15810&hot=2" class="age0"
+           style="border: 1px solid #666; left: 0px; top: 88px; width: 66px; height: 82px; font-size: 7pt;">Softvér
+          dokáže zistiť heslo písané na dotykovom zariadení z 3 metrov</a>
+        <a href="/article.php?id=15795&hot=3" class="age20" style="left: 67px; top: 0px; height: 79px; width: 57px;">Nemecké
+          médiá zažalovali tvorcu Adblocku Plus</a>
+        <a href="/article.php?id=15802&hot=4" class="age7" style="left: 125px; top: 0px; height: 79px; width: 45px;">Nadšenci
+          zapli na 36-ročnej sonde NASA trysky</a>
+        <a href="/article.php?id=15801&hot=5" class="age8"
+           style="left: 67px; top: 80px; height: 63px; width: 53px; font-size: 7pt;">Do USA Vás nepustia s vybitým
+          mobilom</a>
+        <a href="/article.php?id=15800&hot=6" class="age8"
+           style="left: 121px; top: 80px; height: 63px; width: 49px; font-size: 7pt;">Záznam živého prenosu z
+          predstavenia LTE ponuky Orange-u</a>
+        <a href="/article.php?id=15797&hot=7" class="age11"
+           style="border: 1px solid #666; left: 67px; top: 144px; height: 26px; width: 103px; font-size: 7pt;">robots.txt
+          je tu už 20 rokov, Google vtipkuje o terminátoroch</a>
+
+      </div>
+
+
+      <!-- <font class="box_title">&nbsp;<a class="box_title" href="http://www.onlinegames.sk">O N L I N E G A M E S . S K</a></font> -->
+      <table cellspacing="2" cellpadding="1" bgcolor="#000000" border="0">
+        <tr>
+          <td style="padding: 1px; margin: 0px;" bgcolor="#ffffff"><a
+            style="font-decoration: none; border: 0px; padding: 0px; margin: 0px;"
+            href="http://www.onlinegames.sk/game.php?game=1438"><img width="172" height="129"
+                                                                     src="/images/onlinegames-thumbnails-172/1438.jpg"
+                                                                     style="border: 1px solid #000000; padding: 0px; margin: 0px; font-decoration: none;"/></a>
+          </td>
+        </tr>
+      </table>
+
+      <br/>
+
+
+    </td>
+  </tr>
+
+</table>
+
+<table width="98%" border="0" cellpadding="3">
+
+  <tr>
+    <td valign="top" width="50%">
+      <a class="title" href="article.php?article=15698&title=">FIFA pustila do futbalu technológiu, na MS o góloch
+        rozhoduje 14 kamier s 500 fps</a>
+      <br/><br/>
+      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100"
+           src="/images/articles/thumbnails/thumbnail-15698.jpg"/>
+
+      <font class="article_perex">Na 20. majstrovstvách sveta vo futbale, ktoré štartujú úvodným zápasom vo štvrtok,
+        bude prvýkrát v histórii asistovať pri rozhodovaní technológia. Po nesprávnych rozhodnutiach rozhodcov okrem
+        iného na predchádzajúcich MS 2010 bude posudzovať padnutie gólu plne automaticky nemecká kamerová technológia
+        GoalControl-4D, ktorá umožní rozhodcom správne rozhodnúť aj v komplikovaných situáciách. Technológia sa spolieha
+        na celkom 14 vysokorýchlostných kamier na jednom štadióne.</font>
+      <br/><br/>
+      <font class="article_perex">11.6.2014, DSL.sk</font><br/><font class="small_notes"><a
+      href="article.php?article=15698&title=#discussion">79 komentárov, 30.6. 13:57</a> &nbsp; | &nbsp; Hlasov v ankete:
+      330</font>
+
+    </td>
+    <td valign="top" width="50%">
+      <a class="title" href="article.php?article=15634&title=">Google potvrdil fotenie Slovenska, aktualizuje desiatky
+        miest</a>
+      <br/><br/>
+      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100"
+           src="/images/articles/thumbnails/thumbnail-15634.jpg"/>
+
+      <font class="article_perex">Po tom, ako čitatelia DSL.sk najskôr vo štvrtok minulého týždňa a následne dnes
+        zaregistrovali v Bratislave autá pre fotenie panoramatických snímok pre Google Street View, Google oficiálne
+        potvrdil odštartovanie prefocovania Slovenska. Spoločnosť plánuje prefotiť desiatky miest a obcí a nafotiť
+        niektoré nové významné lokality. Začne v najbližších dňoch.</font>
+      <br/><br/>
+      <font class="article_perex">27.5.2014, DSL.sk</font><br/><font class="small_notes"><a
+      href="article.php?article=15634&title=#discussion">88 komentárov, 4.7. 20:42</a> &nbsp; | &nbsp; Hlasov v ankete:
+      687</font>
+
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td valign="top" width="50%">
+      <a class="title" href="article.php?article=15566&title=">Antik spustí gigabitové pripojenie a 4K TV</a>
+      <br/><br/>
+      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100"
+           src="/images/articles/thumbnails/thumbnail-15566.jpg"/>
+
+      <font class="article_perex">Telekomunikačný operátor Antik Telecom plánuje v tomto roku spustiť na Slovensku
+        pripojenie k Internetu s rýchlosťou 1000 Mbps, teda gigabit za sekundu, a to s významným pokrytím. Operátor tiež
+        pripravuje televízne vysielanie s rozlíšením 4K, 3840 x 2160, v ktorom bude šíriť vlastný kanál s natívnym 4K
+        obsahom. Bližšie informácie operátor zverejní v stredu.</font>
+      <br/><br/>
+      <font class="article_perex">12.5.2014, DSL.sk</font><br/><font class="small_notes"><a
+      href="article.php?article=15566&title=#discussion">102 komentárov, 5.7. 10:49</a> &nbsp; | &nbsp; Hlasov v ankete:
+      582</font>
+
+    </td>
+    <td valign="top" width="50%">
+      <a class="title" href="article.php?article=15461&title=">NSA mala zneužívať OpenSSL roky, zmena hesla odporúčaná u
+        15 služieb</a>
+      <br/><br/>
+      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100"
+           src="/images/articles/thumbnails/thumbnail-15461.jpg"/>
+
+      <font class="article_perex">Americká tajná služba NSA mala podľa tvrdení agentúry Bloomberg poznať a zneužívať
+        chybu Heartbleed v knižnici OpenSSL implementujúcej protokol SSL minimálne dva roky. Zároveň v piatok bolo
+        prvýkrát úspešne demonštrované praktické získanie privátnych kľúčov k SSL certifikátu cez Heartbleed. Užívateľom
+        je tak odporúčané v službách, ktoré používali zraniteľnú verziu, pristúpiť minimálne z preventívnych dôvodov k
+        zmene hesla.
+      </font>
+      <br/><br/>
+      <font class="article_perex">12.4.2014, DSL.sk</font><br/><font class="small_notes"><a
+      href="article.php?article=15461&title=#discussion">76 komentárov, 6.5. 12:09</a> &nbsp; | &nbsp; Hlasov v ankete:
+      439</font>
+
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td valign="top" width="50%">
+      <a class="title" href="article.php?article=15416&title=">Orange spustil pripojenie cez VDSL</a>
+      <br/><br/>
+      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100"
+           src="/images/articles/thumbnails/thumbnail-15416.jpg"/>
+
+      <font class="article_perex">Telekomunikačný operátor Orange dnes ako prvý z alternatívnych operátorov predstavil
+        ponuku svojho pevného pripojenia do Internetu technológiou VDSL. Orange rýchlejšie pripojenie cez VDSL ponúka v
+        podobe doplnkových balíčkov zvyšujúcich rýchlosť buď na 20 / 2 Mbps alebo 50 / 5 Mbps. U 20 Mbps balíčku si je
+        možné zvýšiť upload na 5 Mbps, zároveň pri zrýchlení sťahovania na 10 Mbps je k dispozícii rýchlejší 1 Mbps
+        upload.</font>
+      <br/><br/>
+      <font class="article_perex">2.4.2014, DSL.sk</font><br/><font class="small_notes"><a
+      href="article.php?article=15416&title=#discussion">57 komentárov, 19.6. 16:58</a> &nbsp; | &nbsp; Hlasov v ankete:
+      390</font>
+
+    </td>
+    <td valign="top" width="50%">
+      <a class="title" href="article.php?article=15356&title=">Google predstavil Android pre hodinky, zatiaľ umožňuje
+        len aplikačné notifikácie</a>
+      <br/><br/>
+      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100"
+           src="/images/articles/thumbnails/thumbnail-15356.jpg"/>
+
+      <font class="article_perex">Spoločnosť Google aktuálne predstavila očakávanú novú platformu Android Wear, určenú
+        pre nositeľné zariadenia a zatiaľ najmä náramkové smart hodinky. Platforma je podľa predstavenej funkčnosti
+        určená pre zariadenia, ktoré budú dopĺňať funkčnosť plnohodnotných mobilných zariadení ako sú smartfóny. Prvými
+        dvomi zariadeniami postavenými na platforme budú hodinky od LG a Motoroly.</font>
+      <br/><br/>
+      <font class="article_perex">19.3.2014, DSL.sk</font><br/><font class="small_notes"><a
+      href="article.php?article=15356&title=#discussion">17 komentárov, 9.7. 1:27</a> &nbsp; | &nbsp; Hlasov v ankete:
+      191</font>
+
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+
+</table>
+
+<br/>
 <!--
           <div id="articles_menu">
             <table border="0" cellspacing="0" cellpadding="0">
@@ -788,124 +974,179 @@
         </div>
         <br/><br/>
 -->
-  
 
-  <table width="98%" border="0" cellpadding="3">
 
-    
-    <tr>
-      <td valign="top" width="50%">
-            <a class="title" href="article.php?article=15248&title=">Facebook vyhodí za WhatsApp 19 miliárd dolárov</a>
-    <br/><br/>
-      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100" src="/images/articles/thumbnails/thumbnail-15248.jpg"/>
-    
-    <font class="article_perex">Spoločnosť Facebook prevádzkujúca rovnomennú najväčšiu webovú službu sociálnych sietí odkúpi prevádzkovateľa instant messaging aplikácie WhatsApp za ekvivalent celkovo až 19 miliárd dolárov. Facebook to oznámil v noci na dnes, pričom 4 miliardy zaplatí v dolároch a 15 miliárd vo svojich akciách. Akvizícia sa stane vôbec najväčšou akvizíciou internetovej služby.</font>
-    <br/><br/>
-    <font class="article_perex">20.2.2014, DSL.sk</font><br/><font class="small_notes"><a href="article.php?article=15248&title=#discussion">78 komentárov, 25.4. 10:35</a> &nbsp; | &nbsp; Hlasov v ankete: 267</font>
- 
-      </td>    
-      <td valign="top" width="50%">
-            <a class="title" href="article.php?article=15165&title=">Lenovo sa stáva HW gigantom, od Google kupuje Motorolu</a>
-    <br/><br/>
-      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100" src="/images/articles/thumbnails/thumbnail-15165.jpg"/>
-    
-    <font class="article_perex">Spoločnosť Google odpredáva mobilného výrobcu Motorola Mobility čínskej spoločnosti Lenovo, ktorá zaňho zaplatí cca 2.91 miliardy dolárov. Lenovo kúpou získava okrem výrobcu zvučného mena aj významnú pozíciu na trhoch smartfónov v USA a Latinskej Amerike a po minulotýždňovej ohlásenej akvizícii výroby x86 serverov od IBM sa stáva jedným z najsilnejších hardvérových gigantov v oblasti výpočtovej techniky.</font>
-    <br/><br/>
-    <font class="article_perex">30.1.2014, DSL.sk</font><br/><font class="small_notes"><a href="article.php?article=15165&title=#discussion">94 komentárov, 18.5. 11:42</a> &nbsp; | &nbsp; Hlasov v ankete: 309</font>
-  
-      </td> 
-    </tr>
-    <tr><td colspan="2">&nbsp;</td></tr>
-    
-    <tr>
-      <td valign="top" width="50%">
-            <a class="title" href="article.php?article=15120&title=">Bitcoin by sa mohol presadiť vďaka pornu, na porn.com tvorí štvrtinu príjmov</a>
-    <br/><br/>
-      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100" src="/images/articles/thumbnails/thumbnail-15120.jpg"/>
-    
-    <font class="article_perex">Digitálna mena Bitcoin vytvorená neznámou osobou respektíve entitou vystupujúcou pod menom Satoshi Nakamoto, ktorá znamenala z technického hľadiska výrazný skok v implementácii digitálnych mien, sa v uplynulom roku presadila aj ako investičný hoci výrazne špekulatívny nástroj. V roku 2014 sa očakáva jej potenciálne presadenie sa ako bežného platidla pri legitímnych nákupoch, pričom podľa prevádzkovateľov Porn.com by kľúčovou oblasťou, ktorá by mala takéto využitie naštartovať, by mal byť predaj pornografického obsahu.</font>
-    <br/><br/>
-    <font class="article_perex">19.1.2014, DSL.sk</font><br/><font class="small_notes"><a href="article.php?article=15120&title=#discussion">60 komentárov, 1.6. 12:01</a> &nbsp; | &nbsp; Hlasov v ankete: 343</font>
- 
-      </td>    
-      <td valign="top" width="50%">
-            <a class="title" href="article.php?article=15079&title=">V SR vznikne štvrtý mobilný operátor, Orange a Telekom avizujú rýchle LTE siete - aktualizácia 3</a>
-    <br/><br/>
-      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100" src="/images/articles/thumbnails/thumbnail-15079.jpg"/>
-    
-    <font class="article_perex">Vo výberovom konaní na pridelenie nových frekvencií pre mobilné siete v pásmach 800 MHz, 1800 MHz a 2600 MHz získal dostatočné množstvo frekvencií na vytvorenie mobilnej siete s rozsiahlym pokrytím aj nový hráč, spoločnosť Swan. Traja existujúci operátori zase získali dostatok frekvencí pre celoplošnú LTE sieť, Orange a Telekom frekvencie aj pre vysokorýchlostnú sieť v najväčších mestách.</font>
-    <br/><br/>
-    <font class="article_perex">8.1.2014, DSL.sk</font><br/><font class="small_notes"><a href="article.php?article=15079&title=#discussion">97 komentárov, 22.2. 21:10</a> &nbsp; | &nbsp; Hlasov v ankete: 590</font>
-  
-      </td> 
-    </tr>
-    <tr><td colspan="2">&nbsp;</td></tr>
-    
-    <tr>
-      <td valign="top" width="50%">
-            <a class="title" href="article.php?article=14881&title=">Vtipný Telekom spúšťa LTE s 1.5 GB dát, v 5 mestách</a>
-    <br/><br/>
-      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100" src="/images/articles/thumbnails/thumbnail-14881.jpg"/>
-    
-    <font class="article_perex">Telekomunikačný operátor Slovak Telekom dnes oznámil spúšťanie poskytovania mobilného pripojenia k Internetu technológiou LTE, ktoré začne ponúkať od zajtra v mestách Trnava, Nitra, Žilina, Banská Bystrica a Prešov. LTE bude fungovať v pásme 1800 MHz a bude v konfigurácii s maximálnou rýchlosťou sťahovania 73 Mbps a odosielania 23 Mbps. Využívať LTE bude možné u existujúcich programov Happy, Biznis Star a Neobmedzený mobilný Internet, najskôr zadarmo a následne za mesačný poplatok navyše.</font>
-    <br/><br/>
-    <font class="article_perex">14.11.2013, DSL.sk</font><br/><font class="small_notes"><a href="article.php?article=14881&title=#discussion">119 komentárov, 18.1. 20:28</a></font>
- 
-      </td>    
-      <td valign="top" width="50%">
-            <a class="title" href="article.php?article=14838&title=">Kapacita HDD poskočila o 50%, WD uviedol 6 TB héliové disky</a>
-    <br/><br/>
-      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100" src="/images/articles/thumbnails/thumbnail-14838.jpg"/>
-    
-    <font class="article_perex">Spoločnosť HGST patriaca do skupiny aktuálne najväčšieho výrobcu pevných diskov Western Digital dnes uviedla na trh avizované héliové disky. Nové 3.5" disky pre SATA a SAS rozhranie sú postavené na siedmich platniach a majú kapacitu 6 TB, kapacitu doterajších najväčších 4 TB diskov tak prekonávajú o 50%. Nové disky majú pritom menšiu spotrebu, hmotnosť a menej sa zahrievajú.</font>
-    <br/><br/>
-    <font class="article_perex">4.11.2013, DSL.sk</font><br/><font class="small_notes"><a href="article.php?article=14838&title=#discussion">118 komentárov, 23.3. 23:34</a> &nbsp; | &nbsp; Hlasov v ankete: 1096</font>
-  
-      </td> 
-    </tr>
-    <tr><td colspan="2">&nbsp;</td></tr>
-  <tr><td colspan="2" align="right"><a href="index.php?page=14827">Staršie články</a></td></tr>
-  <tr><td colspan="2">&nbsp;</td></tr>
+<table width="98%" border="0" cellpadding="3">
 
-  </table>
- 
-        </div>
-      
-      </td></tr>
-      <tr><td valign="bottom">
-  
-<br/><br/>				    
-      </td></tr>
-      </table>
-      
-      <div id="footer" style="text-align: center;">
-          <a href="visitors.php">NÁVŠTEVNOSŤ</a> | <a href="advertising.php">INZERCIA</a><br/>
-          (C) 2004, 2005 DSL.sk | Všetky práva vyhradené. | Kontakt: admin @ dsl.sk<br/>
-           Všetky uvedené informácie sú bez záruky.
-      </div>
-    </div>
-    
+
+  <tr>
+    <td valign="top" width="50%">
+      <a class="title" href="article.php?article=15248&title=">Facebook vyhodí za WhatsApp 19 miliárd dolárov</a>
+      <br/><br/>
+      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100"
+           src="/images/articles/thumbnails/thumbnail-15248.jpg"/>
+
+      <font class="article_perex">Spoločnosť Facebook prevádzkujúca rovnomennú najväčšiu webovú službu sociálnych sietí
+        odkúpi prevádzkovateľa instant messaging aplikácie WhatsApp za ekvivalent celkovo až 19 miliárd dolárov.
+        Facebook to oznámil v noci na dnes, pričom 4 miliardy zaplatí v dolároch a 15 miliárd vo svojich akciách.
+        Akvizícia sa stane vôbec najväčšou akvizíciou internetovej služby.</font>
+      <br/><br/>
+      <font class="article_perex">20.2.2014, DSL.sk</font><br/><font class="small_notes"><a
+      href="article.php?article=15248&title=#discussion">78 komentárov, 25.4. 10:35</a> &nbsp; | &nbsp; Hlasov v ankete:
+      267</font>
+
     </td>
-      
-    <td valign="top" style="padding-left: 8px; padding-top: 150px;">    
-			
-   		<br/>
-      <script type="text/javascript"><!--
-      google_ad_client = "ca-pub-8109890840368333";
-      /* DSL.sk HP 160x600 */
-      google_ad_slot = "7569632463";
-      google_ad_width = 160;
-      google_ad_height = 600;
-      //-->
-      </script>
-      <script type="text/javascript"
-      src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-      </script>
-		
+    <td valign="top" width="50%">
+      <a class="title" href="article.php?article=15165&title=">Lenovo sa stáva HW gigantom, od Google kupuje
+        Motorolu</a>
+      <br/><br/>
+      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100"
+           src="/images/articles/thumbnails/thumbnail-15165.jpg"/>
+
+      <font class="article_perex">Spoločnosť Google odpredáva mobilného výrobcu Motorola Mobility čínskej spoločnosti
+        Lenovo, ktorá zaňho zaplatí cca 2.91 miliardy dolárov. Lenovo kúpou získava okrem výrobcu zvučného mena aj
+        významnú pozíciu na trhoch smartfónov v USA a Latinskej Amerike a po minulotýždňovej ohlásenej akvizícii výroby
+        x86 serverov od IBM sa stáva jedným z najsilnejších hardvérových gigantov v oblasti výpočtovej techniky.</font>
+      <br/><br/>
+      <font class="article_perex">30.1.2014, DSL.sk</font><br/><font class="small_notes"><a
+      href="article.php?article=15165&title=#discussion">94 komentárov, 18.5. 11:42</a> &nbsp; | &nbsp; Hlasov v ankete:
+      309</font>
+
     </td>
-  
-    </tr></table>
-    
-  </body>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td valign="top" width="50%">
+      <a class="title" href="article.php?article=15120&title=">Bitcoin by sa mohol presadiť vďaka pornu, na porn.com
+        tvorí štvrtinu príjmov</a>
+      <br/><br/>
+      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100"
+           src="/images/articles/thumbnails/thumbnail-15120.jpg"/>
+
+      <font class="article_perex">Digitálna mena Bitcoin vytvorená neznámou osobou respektíve entitou vystupujúcou pod
+        menom Satoshi Nakamoto, ktorá znamenala z technického hľadiska výrazný skok v implementácii digitálnych mien, sa
+        v uplynulom roku presadila aj ako investičný hoci výrazne špekulatívny nástroj. V roku 2014 sa očakáva jej
+        potenciálne presadenie sa ako bežného platidla pri legitímnych nákupoch, pričom podľa prevádzkovateľov Porn.com
+        by kľúčovou oblasťou, ktorá by mala takéto využitie naštartovať, by mal byť predaj pornografického
+        obsahu.</font>
+      <br/><br/>
+      <font class="article_perex">19.1.2014, DSL.sk</font><br/><font class="small_notes"><a
+      href="article.php?article=15120&title=#discussion">60 komentárov, 1.6. 12:01</a> &nbsp; | &nbsp; Hlasov v ankete:
+      343</font>
+
+    </td>
+    <td valign="top" width="50%">
+      <a class="title" href="article.php?article=15079&title=">V SR vznikne štvrtý mobilný operátor, Orange a Telekom
+        avizujú rýchle LTE siete - aktualizácia 3</a>
+      <br/><br/>
+      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100"
+           src="/images/articles/thumbnails/thumbnail-15079.jpg"/>
+
+      <font class="article_perex">Vo výberovom konaní na pridelenie nových frekvencií pre mobilné siete v pásmach 800
+        MHz, 1800 MHz a 2600 MHz získal dostatočné množstvo frekvencií na vytvorenie mobilnej siete s rozsiahlym
+        pokrytím aj nový hráč, spoločnosť Swan. Traja existujúci operátori zase získali dostatok frekvencí pre
+        celoplošnú LTE sieť, Orange a Telekom frekvencie aj pre vysokorýchlostnú sieť v najväčších mestách.</font>
+      <br/><br/>
+      <font class="article_perex">8.1.2014, DSL.sk</font><br/><font class="small_notes"><a
+      href="article.php?article=15079&title=#discussion">97 komentárov, 22.2. 21:10</a> &nbsp; | &nbsp; Hlasov v ankete:
+      590</font>
+
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td valign="top" width="50%">
+      <a class="title" href="article.php?article=14881&title=">Vtipný Telekom spúšťa LTE s 1.5 GB dát, v 5 mestách</a>
+      <br/><br/>
+      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100"
+           src="/images/articles/thumbnails/thumbnail-14881.jpg"/>
+
+      <font class="article_perex">Telekomunikačný operátor Slovak Telekom dnes oznámil spúšťanie poskytovania mobilného
+        pripojenia k Internetu technológiou LTE, ktoré začne ponúkať od zajtra v mestách Trnava, Nitra, Žilina, Banská
+        Bystrica a Prešov. LTE bude fungovať v pásme 1800 MHz a bude v konfigurácii s maximálnou rýchlosťou sťahovania
+        73 Mbps a odosielania 23 Mbps. Využívať LTE bude možné u existujúcich programov Happy, Biznis Star a Neobmedzený
+        mobilný Internet, najskôr zadarmo a následne za mesačný poplatok navyše.</font>
+      <br/><br/>
+      <font class="article_perex">14.11.2013, DSL.sk</font><br/><font class="small_notes"><a
+      href="article.php?article=14881&title=#discussion">119 komentárov, 18.1. 20:28</a></font>
+
+    </td>
+    <td valign="top" width="50%">
+      <a class="title" href="article.php?article=14838&title=">Kapacita HDD poskočila o 50%, WD uviedol 6 TB héliové
+        disky</a>
+      <br/><br/>
+      <img align="left" border="1" style="margin-right: 4px; margin-bottom: 4px" width="100"
+           src="/images/articles/thumbnails/thumbnail-14838.jpg"/>
+
+      <font class="article_perex">Spoločnosť HGST patriaca do skupiny aktuálne najväčšieho výrobcu pevných diskov
+        Western Digital dnes uviedla na trh avizované héliové disky. Nové 3.5" disky pre SATA a SAS rozhranie sú
+        postavené na siedmich platniach a majú kapacitu 6 TB, kapacitu doterajších najväčších 4 TB diskov tak
+        prekonávajú o 50%. Nové disky majú pritom menšiu spotrebu, hmotnosť a menej sa zahrievajú.</font>
+      <br/><br/>
+      <font class="article_perex">4.11.2013, DSL.sk</font><br/><font class="small_notes"><a
+      href="article.php?article=14838&title=#discussion">118 komentárov, 23.3. 23:34</a> &nbsp; | &nbsp; Hlasov v
+      ankete: 1096</font>
+
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="right"><a href="index.php?page=14827">Staršie články</a></td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+
+</table>
+
+</div>
+
+</td>
+</tr>
+<tr>
+  <td valign="bottom">
+
+    <br/><br/>
+  </td>
+</tr>
+</table>
+
+<div id="footer" style="text-align: center;">
+  <a href="visitors.php">NÁVŠTEVNOSŤ</a> | <a href="advertising.php">INZERCIA</a><br/>
+  (C) 2004, 2005 DSL.sk | Všetky práva vyhradené. | Kontakt: admin @ dsl.sk<br/>
+  Všetky uvedené informácie sú bez záruky.
+</div>
+</div>
+
+</td>
+
+<td valign="top" style="padding-left: 8px; padding-top: 150px;">
+
+  <br/>
+  <script type="text/javascript"><!--
+  google_ad_client = "ca-pub-8109890840368333";
+  /* DSL.sk HP 160x600 */
+  google_ad_slot = "7569632463";
+  google_ad_width = 160;
+  google_ad_height = 600;
+  //-->
+  </script>
+  <script type="text/javascript"
+          src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+  </script>
+
+</td>
+
+</tr>
+</table>
+
+</body>
 </html>      
-  
